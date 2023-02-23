@@ -62,7 +62,7 @@ rolldice.addEventListener("click", function () {
         updateCurrentScores();
         break;
     }
-    if (player0.currScore + player0.totalScore >= 20) {
+    if (player0.currScore + player0.totalScore >= 100) {
       player0El.classList.add("player--winner");
       player0.totalScore += player0.currScore;
       player0.currScore = 0;
@@ -72,7 +72,7 @@ rolldice.addEventListener("click", function () {
       playerWon = true;
       imageEl.src = "gameover.png";
     }
-    if (player1.currScore + player1.totalScore >= 20) {
+    if (player1.currScore + player1.totalScore >= 100) {
       player1El.classList.add("player--winner");
       player1.totalScore += player1.currScore;
       player1.currScore = 0;
